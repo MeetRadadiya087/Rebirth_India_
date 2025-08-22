@@ -1,0 +1,836 @@
+:root {
+  --blue: #1d4ed8;
+  --red: #dc2626;
+  --black: #000000;
+  --white: #ffffff;
+  --accent: #0ea5e9;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+
+
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+
+
+
+/* navbar */
+
+/* Navbar Custom */
+.navbar {
+  background-color: #000 !important; /* Black background */
+  padding: 0.8rem 1.5rem;
+}
+
+/* Navbar Links */
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--blue) !important;
+}
+
+/* NAVBAR - DROPDOWN */
+
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* Dropdown Box */
+.dropdown-menu {
+  height: 200px;
+  background-color: #111;
+  border: none;
+  min-width: 160px;
+  padding: 0;
+  border-radius: 6px;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  height: 38px;
+  line-height: 38px;
+  transition: 0.3s ease;
+}
+
+.dropdown-item:hover {
+  color: #ff3b3b !important;
+  background: transparent !important;
+}
+
+/* Toggler button (mobile) */
+.navbar-toggler {
+  border: none;
+  filter: invert(1);
+}
+
+
+
+
+
+
+
+
+/* hero section */
+
+/* Slider */
+.carousel-item {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+/* START WHY CHOOSE US SECTION */
+
+ .choose-section {
+      width: 100%;
+      height: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .choose-card {
+      background-color: #111;
+      color: var(--white);
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 16px;
+
+      /* transition: transform 0.3s, box-shadow 0.3s; */
+      /* .choose-card:hover { */
+      /* transform: translateY(-10px); */
+      /* box-shadow: 10px 10px rgba(149, 149, 149, 0.5); */
+    }
+    .choose-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .icon-blue {
+      color: #3b82f6;
+    }
+    .icon-red {
+      color: #ef4444;
+    }
+    .choose-card h5 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .choose-card p {
+      color: #9ca3af;
+    }
+/* END WHY CHOOSE US SECTION */
+
+
+
+
+
+
+
+    /* ABOUT US SECTION TOP */
+    .about-back-main-top{
+      width: 100%;
+      height: 500px;
+      /* border: 1px solid white; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-main-top{
+      width: 85%;
+      height: 100%;
+      /* border: 1px solid white; */
+      box-shadow: rgba(255, 255, 255, 0.3) 0px 2px 4px 0px, rgba(255, 255, 255, 0.3) 0px 2px 16px 0px, rgba(255, 255, 255, 0.3) 0px 2px 16px 0px, rgba(255, 255, 255, 0.3) 0px 2px 16px 0px;
+      border-radius: 0px 80px 0px 80px ;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .about-img-top{
+      width: 46%;
+      height: 100%;
+      margin-left: -21.5px;
+    }
+    
+    .about-img-top img{
+      width: 100%;
+      height: 100%;
+      border-radius: 0px 0px 0px 80px ;
+    }
+    
+    .about-text{
+      width: 50%;
+      height: 100%;
+      padding: 20px;
+    }
+
+
+
+
+    /* ABOUT US SECTION TOP */
+
+
+    /* ABOUT US SECTION BOTTOM */
+
+    .about-back-main-bottom{
+      width: 100%;
+      height: 500px;
+      /* border: 1px solid white; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 70px;
+    }
+
+    .about-main-bottom{
+      width: 85%;
+      height: 100%;
+      /* border: 1px solid white; */
+      box-shadow: rgba(255, 255, 255, 0.3) 0px 2px 4px 0px, rgba(255, 255, 255, 0.3) 0px 2px 16px 0px, rgba(255, 255, 255, 0.3) 0px 2px 16px 0px, rgba(255, 255, 255, 0.3) 0px 2px 16px 0px;
+      border-radius: 0px 80px 0px 80px ;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .about-img-bottom{
+      width: 46%;
+      height: 100%;
+      margin-right: -21.5px;
+    }
+    
+    .about-img-bottom img{
+      width: 100%;
+      height: 100%;
+      border-radius: 0px 80px 0px 0px ;
+    }
+    
+    .about-text-bottom{
+      width: 50%;
+      height: 100%;
+      padding: 20px;
+    }
+
+
+
+
+    /* ABOUT US SECTION BOTTOM */
+
+
+
+
+
+
+/* Our Products section */
+
+.section{
+  padding: 50px 85px;
+}
+
+.card.product {
+  border: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 16px;
+  transition: transform .25s ease, box-shadow .25s ease;
+  background-color: #000000;
+  font-size: 18px;
+  /* font-weight: 700; */
+}
+
+.card.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(255, 255, 255, 0.15);
+}
+
+.card.product img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.card-body h5{
+  color: var(--white);
+  font-weight: 700;
+}
+
+.price {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.card-body a{
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.card-h5 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-a-link {
+  color: #0f172a;
+}
+
+
+
+/* START Ready to Upgrade Your Workshop? */
+
+.cta-section {
+      width: 100%;
+      height: 284px;
+      background-color: #2563eb; /* Blue background same as screenshot */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .cta-section h2 {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .cta-section p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .cta-btn {
+      padding: 12px 40px;
+      border-radius: 15px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-quote {
+      background: white;
+      color: #2563eb;
+      border: none;
+      margin-right: 15px;
+    }
+
+    .btn-quote:hover {
+      background: #f1f1f1;
+    }
+
+    .btn-shop {
+      background: #ef4444;
+      color: white;
+      border: none;
+    }
+
+    .btn-shop:hover {
+      background: #dc2626;
+    }
+
+
+/* END Ready to Upgrade Your Workshop? */
+
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+  background: #0d0d0d;
+  /* Dark Black */
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0dcaf0;
+  /* Bootstrap blue */
+  padding-left: 5px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: red;
+}
+
+footer p,
+footer small {
+  margin: 0;
+}
+
+/* footer {
+  background: #1f0e0e;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+.icon-bullet {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(45deg, var(--red), var(--black));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  box-shadow: 0 8px 30px rgba(220, 38, 38, .35);
+} */
+
+
+
+/* Utilities */
+.bg-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, .2) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.shadow-soft {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .12);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Update hero slider */
+
+/* Fullscreen Carousel */
+#heroCarousel,
+#heroCarousel .carousel-item {
+  height: 100vh;
+  min-height: 400px;
+}
+
+#heroCarousel .carousel-item {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Caption at left-bottom */
+.caption-left-bottom {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  text-align: left;
+}
+
+/* Caption styling */
+.caption-box {
+  background: rgba(0, 0, 0, 0.6);
+  /* semi-transparent black */
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.caption-box h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 600px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Controls (black & white only) */
+.carousel-arrow {
+  font-size: 2.5rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+}
+
+.carousel-arrow:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  opacity: 0.6;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .caption-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .caption-left-bottom {
+    bottom: 5%;
+    left: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* update slider size */
+
+/* #main-container{
+  width: 100%;
+  height: 70vh;
+  background-color: #0dcaf0;
+} */
+
+
+
+
+
+
+
+/* CONTACT US PAGE CSS */
+
+/* =============================
+   Global Dark Theme Styles
+   ============================= */
+/* ====== General Styles ====== */
+
+
+/* Contact Section Wrapper */
+.contact-section {
+  padding: 50px 10px;
+  margin-bottom: -50px;
+  background: var(--black);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: auto;
+  gap: 50px;
+  animation: slideUp 1.2s ease-in-out;
+}
+
+/* ====== Contact Form ====== */
+.contact-form {
+  width: 500px;
+  height: 400px;
+  flex: 1;
+  background: #00A0E3; /* dark-blue */
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(158, 189, 255, 0.1); /* faint blue */
+  transform: skewY(-5deg);
+  transition: top 0.6s;
+}
+.contact-form:hover::before {
+  top: 0;
+}
+
+.contact-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+
+.contact-form h1 {
+  /* margin-bottom: 20px; */
+  color: #ffffff;
+  font-size: 24px;
+  border-left: 5px solid #1e3a8a;
+  padding-left: 10px;
+}
+
+/* Inputs */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #dcdcdc;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #1e3a8a;
+  background: #0f1118;
+  color: #fff;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+  transform: scale(1.02);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 10px #2563eb;
+}
+
+/* ====== Button ====== */
+button {
+  background: #2563eb;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+button:hover {
+  background: #1e3a8a;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 15px #2563eb;
+}
+button:active {
+  background: #b91c1c; /* dark-red */
+  transform: scale(0.97);
+}
+
+/* ====== Map Section ====== */
+.contact-map {
+  flex: 1;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 2px solid #1e3a8a;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  transition: transform 0.4s ease, border-color 0.3s, box-shadow 0.4s;
+}
+.contact-map:hover {
+  transform: scale(1.05) rotate(1deg);
+  border-color: #ff1e1e;
+  box-shadow: 0 0 25px #ff1e1e;
+}
+
+/* ====== Animations ====== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== Responsive ====== */
+@media(max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-map {
+    height: 250px;
+  }
+}
+
+/* ====== Floating Underline for Inputs ====== */
+.form-group {
+  position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(39, 208, 255);
+  color: #fff;
+  font-size: 14px;
+  border-bottom: 2px solid #1e3a8a;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#form-name{
+  width: 100%;
+  height: 80px;
+}
+
+/* Animated underline effect */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.form-group input:focus ~ .underline,
+.form-group textarea:focus ~ .underline {
+  width: 100%;
+}
+
+/* Underline element */
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, #2563eb, #b91c1c); /* blue → red */
+  transition: width 0.4s ease-in-out;
+}
+
+
+
+/* ICONS ANIMATION */
+
+/* ICON STYLE */
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  color: whitesmoke; /* default color */
+  pointer-events: none;
+}
+
+/* On hover of input/textarea → animate icon */
+.form-group input:hover ~ i,
+.form-group textarea:hover ~ i {
+  color: #7DF9FF; /* electric blue */
+  transform: translateY(-50%) scale(1.2);
+}
+
+/* On focus of input/textarea → glowing icon */
+.form-group input:focus ~ i,
+.form-group textarea:focus ~ i {
+  color: red;
+  text-shadow: 0 0 8px #1E90FF, 0 0 12px #7DF9FF;
+  transform: translateY(-50%) rotate(10deg);
+}
+
+/* Small pulse animation when focusing */
+@keyframes pulse {
+  0% { transform: translateY(-50%) scale(1); }
+  50% { transform: translateY(-50%) scale(1.3); }
+  100% { transform: translateY(-50%) scale(1); }
+}
+
+.form-group input:focus ~ i,
+.form-group textarea:focus ~ i {
+  animation: pulse 0.6s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE CSS */
+
+.custom-shadow {
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 16px;
+}
+
+
+
+
+
+

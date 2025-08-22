@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Lifts</title>
+    <link rel="stylesheet" href="assets/css/show-products.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+        <div id="navbar" style="border:none; width:100%; height:60px;"></div>
+
+        <!-- <iframe src="navbar.html" style="border:none; width:100%; height:60px;"></iframe> -->
+    </nav>
+
+    <!-- index.html -->
+
+
+
+
+    <!-- =============== END NAVBAR =============== -->
+
+    <!-- =============== START PRODUCTS SHOW CASE =============== -->
+
+    <!-- Title -->
+    <div class="text-center my-4">
+        <h1>Wheel Balancer</h1>
+    </div>
+
+    <!-- Product Section 1 -->
+    <div class="pr-right-img-sec row align-items-center">
+        <div class="col-lg-7 col-md-7 col-12 left-sec">
+            <h1>Wheel Alignment</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero animi ipsam dolorum. Quae voluptates eos
+                voluptatum, quam incidunt et excepturi suscipit. Corporis doloremque incidunt earum natus quis! Ullam,
+                vel recusandae.</p>
+        </div>
+        <div class="col-lg-5 col-md-5 col-12 right-box">
+            <img src="assets/images/products/p5.svg" alt="Loding...">
+        </div>
+    </div>
+
+    <!-- Product Section 2 -->
+    <div class="pr-right-img-sec row align-items-center flex-lg-row-reverse">
+        <div class="col-lg-5 col-md-5 col-12 right-box">
+            <img src="assets/images/products/p5.svg" alt="Loding...">
+        </div>
+        <div class="col-lg-7 col-md-7 col-12 left-sec">
+            <h1>Wheel Alignment</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero animi ipsam dolorum. Quae voluptates eos
+                voluptatum, quam incidunt et excepturi suscipit. Corporis doloremque incidunt earum natus quis! Ullam,
+                vel recusandae.</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- =============== END PRODUCTS SHOW CASE =============== -->
+
+
+
+    <!-- =============== START FOOTER =============== -->
+
+    <div id="footer" style="border: none; width: 100%; height: 220px;"></div>
+
+    <!-- =============== END FOOTER =============== -->
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+
+
+    fetch("footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+</script>
